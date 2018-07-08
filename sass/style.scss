@@ -1,0 +1,83 @@
+/*global*/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+body {
+  background: lightgrey;
+  text-align: center;
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+  padding: 30px 0;
+}
+h1 {
+  text-align: center;
+}
+.new-game {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: .2s;
+}
+.new-game:hover {
+  color: black;
+  background: white;
+}
+.buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+.choose {
+  width: 150px;
+  height: 40px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+.choose:hover {
+  background: red;
+  color: white;
+}
+.btn-rock {
+  background: grey;
+  color: white;
+}
+.btn-paper {
+  background: white;
+  color: black;
+}
+.btn-scissors {
+  background: black;
+  color: white;
+}
+.player, .computer {
+  display: inline-block;
+  margin: 30px;
+  font-size: 20px;
+  padding: 20px;
+  min-width: 200px;
+  min-height: 160px;
+  background: white;
+  border-radius: 15px;
+}
+.player {
+  float: left;
+  margin-left: 200px;
+}
+.computer {
+  float: right;
+  margin-right: 200px;
+}
+.info {
+  color: red;
+}
