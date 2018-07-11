@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
-  <title>Rock Paper Scissors 8.4</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <title>Rock Paper Scissors 9.3</title>
+      <link rel="stylesheet" href="css/style.css">  
 </head>
 
 <body>
-
-  <body>
   <section class="container">
 		<h1>Paper Rock Scissors</h1>
 	</div>
@@ -25,13 +17,13 @@
 	</div>
 <div id="output"></div>
 	<div id="playerPickElement" class="buttons">
-			<button id="playerPick_rock" class="choose btn-rock">
+			<button id="playerPick_rock" class="player-move btn-rock" data-move="rock">
 				Rock
 			</button>
-			<button id="playerPick_paper" class="choose btn-paper">
+			<button id="playerPick_paper" class="player-move btn-paper" data-move="paper">
 				Paper
 			</button>
-			<button id="playerPick_scissors" class="choose btn-scissors">
+			<button id="playerPick_scissors" class="player-move btn-scissors" data-move="scissors">
 				Scissors
 			</button>
 	</div>
@@ -63,27 +55,17 @@
 				<div id="computerResult" class="info">
 					Computer's score
 				</div>
-    </div>
+     </div>
 	</div>
   </section>
   <section class="modal">
    <div class="overlay" id="modal-overlay">
     <div class="modal">
-      <a href="#" class="close">x</a>
-      <header>Lorem ipsum</header>
-      <div class="content">
-        <p>Dolor sit amet!</p>
+      <span class="close">x</span>
+      <div id="modal-content">
       </div>
     </div>
   </section>
-  
-  
-
     <script  src="js/index.js"></script>
-
-
-
-
 </body>
-
 </html>
