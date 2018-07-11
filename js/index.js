@@ -6,20 +6,8 @@ newGameBtn.addEventListener('click', newGame); // aktywacja przycisku 'new game'
 var pickWeapon = document.querySelectorAll('.player-move'); //wybieram wszystkie elementy z klasą player-move
 	for( var i = 0; i < pickWeapon.length; i++ ){ // zaczynam pętle, w której każę przejść przez każdy z tych obiektów
     pickWeapon[i].addEventListener('click', function(){ // wywołuję nasłuchiwanie - kliknięcie w przycisk ma wywołać wartość ze zmiennej playerChoice, pobraną z atrybutu data-move
-    var playerChoice = event.target.getAttribute('data-move');
+    var playerPick = event.target.getAttribute('data-move');
     });
-  
-
-
-pickRock.addEventListener('click', function() { 
-	playerPick('rock') // uruchomienie funkcji odpowiedzialnej za wybór gracza w momencie naciśnięcia przycisku 'rock'
-});
-pickPaper.addEventListener('click', function() { 
-	playerPick('paper') // jw.
-});
-pickScissors.addEventListener('click', function() {
-	playerPick('scissors') // jw.
-});
 
 var gameState = 'notStarted' // zmienna, w której zdefiniownay jest stan gry przed rozpoczęciem
     player = {
