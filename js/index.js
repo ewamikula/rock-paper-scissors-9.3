@@ -2,9 +2,13 @@ var newGameBtn = document.getElementById('newGameButton'); // zmienna dla przyci
 
 newGameBtn.addEventListener('click', newGame); // aktywacja przycisku 'new game' poprzez kliknięcie
 
-var pickRock = document.getElementById('playerPick_rock'), // zdefiniowane zmienne oznaczajace wybór gracza
-    pickPaper = document.getElementById('playerPick_paper'),
-    pickScissors = document.getElementById('playerPick_scissors');
+// tu próbuję stworzyć pętlę dla przycisków rock, paper, scissors...
+var pickWeapon = document.querySelectorAll('.player-move'); //wybieram wszystkie elementy z klasą player-move
+	for( var i = 0; i < pickWeapon.length; i++ ){ // zaczynam pętle, w której każę przejść przez każdy z tych obiektów
+    pickWeapon[i].addEventListener('click', function(){ // wywołuję nasłuchiwanie - kliknięcie w przycisk ma wywołać wartość ze zmiennej playerChoice, pobraną z atrybutu data-move
+    var playerChoice = event.target.getAttribute('data-move');
+    });
+  
 
 
 pickRock.addEventListener('click', function() { 
