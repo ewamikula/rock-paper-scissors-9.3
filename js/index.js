@@ -124,14 +124,15 @@ function setGamePoints() { // funckcja, w której obliczne są wyniki gracza i k
 
 function gameFinished() { // funkcja kończąca grę po wskazanej przez gracza na początku liczbie rund - rounds.number
     if (player.score == rounds.number) {
-        alert("You won! " + rounds.number + ' rounds! You won the game!')
+      modalContent.innerHTML =   'You won! ' + rounds.number + ' rounds! You won the game!';
         gameState = 'ended'
     } else if (computer.score == rounds.number) {
-        alert("Computer won " + rounds.number + ' rounds! Computer won the game!')
+      modalContent.innerHTML =   'Computer won ' + rounds.number + ' rounds! Computer won the game!';
         gameState = 'ended'
     }
     setGameElements();
-}
+};}
+
 (function(modal){ 	
 	var showModal = function(event){
 		event.preventDefault();
